@@ -1,10 +1,9 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/Component.jsx'],
+  entry: ['src/Component.tsx'],
   splitting: false,
   sourcemap: false,
   clean: true,
-  loader: { '.js': 'jsx' },
   outDir: 'src/dist',
 });
