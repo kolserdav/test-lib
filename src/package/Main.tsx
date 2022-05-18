@@ -1,4 +1,5 @@
 import React from 'react';
+// Some child component of module
 import Header from './ui/Header';
 
 /**

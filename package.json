@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "eslint -c .eslintrc ${npm_package_dir} && stylelint --config .stylelintrc ${npm_package_dir}",
+    "lint": "eslint -c .eslintrc %npm_package_dir% && stylelint --config .stylelintrc %npm_package_dir%",
     "build": "npm run lint && node -e \"fs.rmSync('src/dist', { recursive: true, force: true })\" && microbundle --format es",
     "dev": "concurrently \"microbundle --format es watch\" \"npm run start\"",
     "test": "react-scripts test",
