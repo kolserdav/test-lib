@@ -1,10 +1,13 @@
 {
   "name": "test-c1",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": false,
   "type": "module",
-  "main": "./src/dist/Component.js",
   "source": "./src/package/Component.tsx",
+  "main": "./src/dist/Component.cjs",
+  "module": "./src/dist/Component.esm.js",
+  "exports": "./src/dist/Component.modern.js",
+  "unpkg": "./src/dist/Component.umd.js",
   "files": [
     "src/dist"
   ],
