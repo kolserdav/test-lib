@@ -6,7 +6,11 @@ interface ComponentProps {
 }
 
 function Component({ test }: ComponentProps) {
-  return <Header>Component</Header>;
+  return <Header>Component 2</Header>;
 }
+
+Component.defaultProps = {
+  test: false,
+};
 
 export default Component;

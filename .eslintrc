@@ -24,14 +24,16 @@
   "plugins": ["@typescript-eslint", "react", "prettier", "eslint-plugin-prettier"],
   "ignorePatterns": ["src/dist/*"],
   "rules": {
+    "react/react-in-jsx-scope": 2,
     "prettier/prettier": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", "jsx"] }],
-    "import/resolver": [
+    "import/no-unresolved": 0,
+    "import/extensions": [
       1,
+      "never",
       {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx", ".cjs"]
-        }
+        "ts": "always",
+        "tsx": "always"
       }
     ]
   }
