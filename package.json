@@ -1,12 +1,10 @@
 {
   "name": "test-c1",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "type": "module",
-  "source": "src/package/Component.tsx",
-  "main": "./src/dist/Component.cjs",
-  "umd:main": "./src/dist/Component.umd.js",
-  "module": "./src/dist/Component.esm.js",
+  "main": "./src/dist/Component.js",
+  "source": "./src/package/Component.tsx",
   "files": [
     "src/dist"
   ],
@@ -17,7 +15,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
-    "test-c1": "^0.1.5",
+    "test-c1": "^0.1.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

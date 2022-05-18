@@ -8873,6 +8873,20 @@ test-c1@^0.1.5:
     test-c1 "^0.1.4"
     web-vitals "^2.1.4"
 
+test-c1@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/test-c1/-/test-c1-0.1.6.tgz#70ddf2cdfb1b5a433cee8180cfd00ba3a3167918"
+  integrity sha512-+sY5UmFpMqvP3l/ktxTrDJLj8miuWGVAe7fB6857J+8YhZ4Lh1NFcE5+AglSJBsNTS1zBYlNQ4rv4IGZrp9wyQ==
+  dependencies:
+    "@testing-library/jest-dom" "^5.16.4"
+    "@testing-library/react" "^13.2.0"
+    "@testing-library/user-event" "^13.5.0"
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-scripts "5.0.1"
+    test-c1 "^0.1.5"
+    web-vitals "^2.1.4"
+
 test-exclude@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-6.0.0.tgz#04a8698661d805ea6fa293b6cb9e63ac044ef15e"

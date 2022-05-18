@@ -25,6 +25,14 @@
   "ignorePatterns": ["src/dist/*"],
   "rules": {
     "prettier/prettier": 1,
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx", "jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", "jsx"] }],
+    "import/resolver": [
+      1,
+      {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx", ".cjs"]
+        }
+      }
+    ]
   }
 }
