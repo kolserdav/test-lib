@@ -1,6 +1,10 @@
 import React from 'react';
 
-function Component() {
+interface ComponentProps {
+  test?: boolean;
+}
+
+function Component({ test }: ComponentProps) {
   return <div className="App">Component</div>;
 }
 
