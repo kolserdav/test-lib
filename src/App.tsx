@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Component from './dist/Component';
+import Component from 'test-c1';
 
 function App() {
   return (

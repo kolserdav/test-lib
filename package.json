@@ -1,8 +1,12 @@
 {
   "name": "test-c1",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
-  "main": "src/dist/Component.js",
+  "type": "module",
+  "source": "src/package/Component.tsx",
+  "main": "./src/dist/Component.cjs",
+  "umd:main": "./src/dist/Component.umd.js",
+  "module": "./src/dist/Component.esm.js",
   "files": [
     "src/dist"
   ],
@@ -18,8 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "dev": "concurrently \"tsup --watch\" \"npm run start\"",
+    "build": "microbundle",
+    "dev": "concurrently \"microbundle watch\" \"npm run start\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
