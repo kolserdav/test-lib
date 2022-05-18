@@ -1,13 +1,11 @@
 {
   "name": "test-c1",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
   "type": "module",
   "source": "./src/package/Component.tsx",
-  "main": "./src/dist/Component.cjs",
+  "main": "./src/dist/Component.js",
   "module": "./src/dist/Component.esm.js",
-  "exports": "./src/dist/Component.modern.js",
-  "unpkg": "./src/dist/Component.umd.js",
   "files": [
     "src/dist"
   ],
@@ -18,12 +16,12 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
-    "test-c1": "^0.1.7",
+    "test-c1": "^0.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "microbundle",
+    "build": "node -e \"fs.rmSync('src/dist', { recursive: true, force: true })\" && microbundle --format es",
     "dev": "concurrently \"microbundle watch\" \"npm run start\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
