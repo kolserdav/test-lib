@@ -29,12 +29,13 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", "jsx"] }],
     "import/no-unresolved": 0,
     "import/extensions": [
-      1,
+      2,
       "never",
       {
         "ts": "always",
         "tsx": "always"
       }
-    ]
+    ],
+    "no-unused-vars": 1
   }
 }

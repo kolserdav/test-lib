@@ -1,10 +1,16 @@
 {
-  "eslint.validate": ["javascript"],
+  "eslint.validate": ["javascript", "tepescript"],
   "eslint.options": { "overrideConfigFile": ".eslintrc" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+  "files.associations": {
+    ".stylelintrc": ".json"
+  }
 }

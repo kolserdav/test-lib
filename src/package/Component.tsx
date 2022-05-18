@@ -6,7 +6,7 @@ interface ComponentProps {
 }
 
 function Component({ test }: ComponentProps) {
-  return <Header>Component 2</Header>;
+  return <Header>Component</Header>;
 }
 
 Component.defaultProps = {
