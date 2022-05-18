@@ -1,11 +1,13 @@
 import React from 'react';
-import Component from './dist/Component.esm';
+// Import the package locally,
+// and test as a library package look in the "example" directory
+import Main from './dist/Main.esm';
 import './App.scss';
 
 function App() {
   return (
     <div className="app">
-      <Component />
+      <Main />
     </div>
   );
 }

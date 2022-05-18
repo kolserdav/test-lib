@@ -1,11 +1,12 @@
 {
   "name": "test-c1",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "private": false,
   "type": "module",
-  "source": "./src/package/Component.tsx",
-  "main": "./src/dist/Component.js",
-  "module": "./src/dist/Component.esm.js",
+  "source": "./src/package/Main.tsx",
+  "main": "./src/dist/Main.js",
+  "module": "./src/dist/Main.esm.js",
+  "dir": "src/package",
   "files": [
     "src/dist"
   ],
@@ -20,7 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node -e \"fs.rmSync('src/dist', { recursive: true, force: true })\" && microbundle --format es",
+    "lint": "eslint -c .eslintrc ${npm_package_dir} && stylelint --config .stylelintrc ${npm_package_dir}",
+    "build": "npm run lint && node -e \"fs.rmSync('src/dist', { recursive: true, force: true })\" && microbundle --format es",
     "dev": "concurrently \"microbundle --format es watch\" \"npm run start\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
