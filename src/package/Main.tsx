@@ -1,6 +1,7 @@
 import React from 'react';
 // Some child component of module
 import Header from './ui/Header';
+import { REPOSITORY } from './utils';
 
 /**
  * Main component of library
@@ -11,7 +12,11 @@ interface MainProps {
 }
 
 function Main({ test }: MainProps) {
-  return <Header>Library Component</Header>;
+  return (
+    <Header>
+      React Library Component. Show <a href={REPOSITORY}>{REPOSITORY}</a>
+    </Header>
+  );
 }
 
 Main.defaultProps = {

@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Header.module.scss';
 
 interface HeaderProps {
-  children: string;
+  children: (string | JSX.Element) | (string | JSX.Element)[];
 }
 
 function Header({ children }: HeaderProps) {

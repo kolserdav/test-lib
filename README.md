@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# React component library template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple template project for create ReactJS component as npm library
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+### Install and setup
 
-### `npm start`
+- Clone source in to custom `package name` directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+git clone https://github.com/kolserdav/react-lib.git [package-name]
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Change dir to package-name:
 
-### `npm test`
+```bash
+cd package-name
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Change git remote origin:
+- - Remove old:
 
-### `npm run build`
+```bash
+git remote remove origin
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- - Add new:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git remote add origin https://github.com/user/package-name.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Set up package name and version on package.json
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```json
+{
+  "name": "package-name",
+  "version": "0.0.1"
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [OPTIONAL] Install recomended extension on [.vscode/extensions.json](.vscode/extensions.json)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Run on development
 
-## Learn More
+**Files of your future component library placed on `src/package` directory**  
+Run with live reload after change files:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build before publish
 
-### Code Splitting
+**Output path for compiled files is `src/dist`**
+Compile with clean extra files:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+### Publish to npmjs.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+_Before each publication, you need to do `git push` with the new version in `package.json`_  
+First publication:
 
-### Making a Progressive Web App
+```bash
+npm publish --access=public
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Other publication:
 
-### Advanced Configuration
+```bash
+npm publish
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Test with real world project
 
-### Deployment
+Can use `example` application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Change directory
 
-### `npm run build` fails to minify
+```bash
+cd examle
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By first usage change import name of package to custom in file [example/src/App.js](example/src/App.js)
+
+- Install your package:
+
+```bash
+npm insttall [package-name]
+```
+
+- Or if not first test, change version of `package-name` in dependencies block of [example/package.json](example/package.json) and run:
+
+```bash
+npm install
+```
+
+It's all. The rest you will figure out for yourself.

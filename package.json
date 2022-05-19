@@ -1,12 +1,26 @@
 {
-  "name": "test-c1",
-  "version": "0.1.11",
+  "name": "@kolserdav/react-lib",
+  "version": "0.0.1",
   "private": false,
+  "license": "MIT",
   "type": "module",
+  "author": {
+    "name": "Sergey Kolmiller",
+    "email": "uyem.ru@gmail.com",
+    "url": "https://portfolio.uyem.ru/en"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kolserdav/react-lib.git"
+  },
+  "keywords": [
+    "create",
+    "react",
+    "library"
+  ],
   "source": "./src/package/Main.tsx",
   "main": "./src/dist/Main.js",
   "module": "./src/dist/Main.esm.js",
-  "dir": "src/package",
   "files": [
     "src/dist"
   ],
@@ -21,7 +35,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "eslint -c .eslintrc %npm_package_dir% && stylelint --config .stylelintrc %npm_package_dir%",
+    "lint": "eslint -c .eslintrc src/package && stylelint --config .stylelintrc src/package",
     "build": "npm run lint && node -e \"fs.rmSync('src/dist', { recursive: true, force: true })\" && microbundle --format es",
     "dev": "concurrently \"microbundle --format es watch\" \"npm run start\"",
     "test": "react-scripts test",

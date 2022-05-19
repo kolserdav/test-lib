@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-// Import package as library
-const Component = React.lazy(() => import('test-c1'));
+// Import your package as library, need change @kolserdav/react-lib no custom package name
+const Component = React.lazy(() => import('@kolserdav/react-lib'));
 
 function App() {
   return (
