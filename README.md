@@ -105,4 +105,10 @@ npm insttall [package-name]
 npm install
 ```
 
+- Run example:
+
+```bash
+npm run start
+```
+
 It's all. The rest you will figure out for yourself.
