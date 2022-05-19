@@ -1441,6 +1441,19 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@kolserdav/react-lib@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@kolserdav/react-lib/-/react-lib-0.0.1.tgz#4f1855d16f0261f213ee6f4aa8a823f7114e6335"
+  integrity sha512-VfZeR/Z5gJWd+4BsNuLcqjSQly5RblcVXyi0Bn/Ecx1DbGJ611yg1vM6t36jmcbOsUR01UN/Ht/YKuYd0tHPdQ==
+  dependencies:
+    "@testing-library/jest-dom" "^5.16.4"
+    "@testing-library/react" "^13.2.0"
+    "@testing-library/user-event" "^13.5.0"
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-scripts "5.0.1"
+    web-vitals "^2.1.4"
+
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
@@ -8082,20 +8095,6 @@ terser@^5.0.0, terser@^5.10.0, terser@^5.7.2:
     commander "^2.20.0"
     source-map "~0.8.0-beta.0"
     source-map-support "~0.5.20"
-
-test-c1@^0.1.8, test-c1@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/test-c1/-/test-c1-0.1.9.tgz#dbd7ebb9e32ecc3c248d932febebf41543665fd8"
-  integrity sha512-PLPQmhMxp/JBxAUnWzek2uls+BeXpKqVR0MiXQPctuvaHuZDftS+39ijZ6NxqJQJnAeKgqMdk2iS+qqtauxOvw==
-  dependencies:
-    "@testing-library/jest-dom" "^5.16.4"
-    "@testing-library/react" "^13.2.0"
-    "@testing-library/user-event" "^13.5.0"
-    react "^18.1.0"
-    react-dom "^18.1.0"
-    react-scripts "5.0.1"
-    test-c1 "^0.1.8"
-    web-vitals "^2.1.4"
 
 test-exclude@^6.0.0:
   version "6.0.0"
