@@ -14,26 +14,26 @@ git clone https://github.com/kolserdav/react-lib.git [package-name]
 
 - Change dir to package-name:
 
-```bash
+```console
 cd package-name
 ```
 
 - Change git remote origin:
 - - Remove old:
 
-```bash
+```console
 git remote remove origin
 ```
 
 - - Add new:
 
-```bash
+```console
 git remote add origin https://github.com/user/package-name.git
 ```
 
 - Install dependencies:
 
-```bash
+```console
 npm install
 ```
 
@@ -53,7 +53,7 @@ npm install
 **Files of your future component library placed on `src/package` directory**  
 Run with live reload after change files:
 
-```bash
+```console
 npm run dev
 ```
 
@@ -62,7 +62,7 @@ npm run dev
 **Output path for compiled files is `src/dist`**
 Compile with clean extra files:
 
-```bash
+```console
 npm run build
 ```
 
@@ -71,13 +71,13 @@ npm run build
 _Before each publication, you need to do `git push` with the new version in `package.json`_  
 First publication:
 
-```bash
+```console
 npm publish --access=public
 ```
 
 Other publication:
 
-```bash
+```console
 npm publish
 ```
 
@@ -87,7 +87,7 @@ Can use `example` application
 
 - Change directory
 
-```bash
+```console
 cd examle
 ```
 
@@ -95,19 +95,19 @@ By first usage change import name of package to custom in file [example/src/App.
 
 - Install your package:
 
-```bash
+```console
 npm insttall [package-name]
 ```
 
 - Or if not first test, change version of `package-name` in dependencies block of [example/package.json](example/package.json) and run:
 
-```bash
+```console
 npm install
 ```
 
 - Run example:
 
-```bash
+```console
 npm run start
 ```
 
