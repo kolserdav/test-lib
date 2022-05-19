@@ -8,7 +8,7 @@ Simple template project for create ReactJS component as npm library
 
 - Clone source in to custom `package name` directory:
 
-```bash
+```console
 git clone https://github.com/kolserdav/react-lib.git [package-name]
 ```
 
