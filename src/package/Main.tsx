@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // Some child component of module
 import Header from './ui/Header';
 import { REPOSITORY } from './utils';
@@ -12,9 +12,14 @@ interface MainProps {
 }
 
 function Main({ test }: MainProps) {
+  const [show, setShow] = useState<boolean>(false);
   return (
-    <Header>
-      React Library Component. Show <a href={REPOSITORY}>{REPOSITORY}</a>
+    <Header
+      onClick={() => {
+        setShow(!show);
+      }}
+    >
+      React Library Component. Show: {show ? <a href={REPOSITORY}>{REPOSITORY}</a> : ''}
     </Header>
   );
 }
